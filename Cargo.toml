@@ -1,0 +1,6 @@
+[package]
+name = "unit-parser"
+version = "0.1.0"
+authors = ["Dan Barella <dan.barella@gmail.com>"]
+
+[dependencies]
