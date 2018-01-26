@@ -7,17 +7,23 @@
 //! - 1e6 m/s (meters per second)
 //! - 42 kg * N (kilogram-newtons)
 //!
-//! In these examples, we have some sort of number -- be it written longhand
-//! or in scientific notation -- followed by a unit, which is some algebraic
-//! expression combining some particular tokens.
+//! In these examples, we have:
+//! - Some sort of number -- be it written longhand, or in scientific notation
+//!   - 5
+//!   - 1e6
+//!   - 42
 //!
-//! Note that units can be written longhand -- as with "kilogram" -- or they
-//! can be written in a variety of shorthands. "kilogram" can shorten to "kg",
-//! for example.
+//! - A unit, some algebraic expression combining some particular tokens.
+//!   - meters
+//!   - m/s
+//!   - kg * N
 //!
-//! Don't trust me to get this right, it's actually defined in a
-//! [reasonably-central place](http://ewh.ieee.org/soc/ias/pub-dept/abbreviation.pdf)
-//! -- though that's also not the entire picture. We'll let that slide for now.
+//! Note that units can be written longhand -- as with "kilogram" -- or they can
+//! be written in a variety of shorthands. "kilogram" can shorten to "kg", for
+//! example. But Don't trust me to get this right, it's actually defined in a
+//! [reasonably-central
+//! place](http://ewh.ieee.org/soc/ias/pub-dept/abbreviation.pdf) -- though
+//! that's also not the entire picture. We'll let that slide for now.
 //!
 //! So, altogether, this crate provides a library which will parse numeric
 //! values with units specified!
