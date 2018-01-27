@@ -8,19 +8,20 @@
 //! - 42 kg * N (kilogram-newtons)
 //!
 //! In these examples, we have:
-//! - Some sort of number -- be it written longhand, or in scientific notation
+//!
+//! 1. Some sort of number -- be it written longhand, or in scientific notation
 //!   - 5
 //!   - 1e6
 //!   - 42
 //!
-//! - A unit, some algebraic expression combining some particular tokens.
+//! 2. A unit, some algebraic expression combining some particular tokens.
 //!   - meters
 //!   - m/s
 //!   - kg * N
 //!
 //! Note that units can be written longhand -- as with "kilogram" -- or they can
 //! be written in a variety of shorthands. "kilogram" can shorten to "kg", for
-//! example. But Don't trust me to get this right, it's actually defined in a
+//! example. But don't trust me to get this right, it's actually defined in a
 //! [reasonably-central
 //! place](http://ewh.ieee.org/soc/ias/pub-dept/abbreviation.pdf) -- though
 //! that's also not the entire picture. We'll let that slide for now.
