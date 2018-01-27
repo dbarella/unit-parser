@@ -12,7 +12,7 @@
 //!
 //! 1 N
 
-extern crate num;
+// TODO: Do a better job with generic numbers.
 
 /// Delimeter tokens, e.g:
 /// (1 + 2) s
@@ -51,7 +51,7 @@ enum Unit {
 /// Data for the parse tree.
 #[derive(Debug, PartialEq)]
 struct NumericValue {
-    number: num::BigInt,
+    number: f64,
     unit: Unit,
 }
 
@@ -59,7 +59,7 @@ struct NumericValue {
 #[derive(Debug, PartialEq)]
 enum Token {
     Delimeter(Delimeter),
-    Number(num::BigInt),
+    Number(f64),
     Operator(Operator),
     Unit(Unit),
 }
